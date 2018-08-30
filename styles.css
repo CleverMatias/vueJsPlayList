@@ -10,6 +10,11 @@ body{
 	margin: 20vh;
 }
 
+a{
+	text-decoration: none;
+	color: #2F54FF;
+}
+
 #vue-app{
 	padding: 15px;
 	color: #666;
