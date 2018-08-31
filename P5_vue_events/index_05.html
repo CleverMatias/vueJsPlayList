@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/vue"></script>
+	<title></title>
+</head>
+<body>
+  <div id="vue-app">
+  	<button v-on:click="addval()">Adicionar 1</button>
+    <button v-on:click="subtractval()">Subtrair 1</button>
+    <p>Valor: {{ val }}</p>
+  	
+  </div>
+
+  <script>
+  	new Vue({
+  		el: '#vue-app',
+  		data: {
+  			val: 0
+  		},
+      methods: {
+        addval () {
+          this.val++
+        },
+        subtractval () {
+          this.val--
+        }
+      }
+  	});
+  </script>
+</body>
+</html>
