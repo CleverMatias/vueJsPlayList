@@ -9,11 +9,13 @@
 <body>
   <div id="vue-app">
   	<h1>Pessoa</h1>
+    <p>{{ description() }}</p>
   	<ul>
   		<li>Nome: {{ nome }}</li>
   		<li>Idade: {{ idade }}</li>
   		<li>peso: {{ peso }}</li>
   	</ul>
+    <p>{{ funcao_com_parametros("azul") }}</p>
   </div>
 
   <script>
@@ -23,7 +25,15 @@
   			nome: "Pequeno Aprendiz",
   			idade: 34,
   			peso: 78.5 + "Kg."
-  		}
+  		},
+      methods: {
+        description () {
+          return "Dados da pessoa: "
+        },
+        funcao_com_parametros (cor) {
+          return "A cor preferida é " + cor
+        }
+      }
   	});
   </script>
 </body>
