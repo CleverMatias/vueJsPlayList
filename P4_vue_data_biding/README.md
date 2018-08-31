@@ -1,6 +1,8 @@
 # Vue Data Biding
 ### Trabalhando com v-bind
 
+[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico]()
+
 1. Em um objeto vue, quando precisamos trabalhar com os atributos das tags html utilizmos o v-bind:{atrributo}, isso significa que utilizaremos o vue para gerenciar o conteúdo de um determinado atributo.
 
 ```html
@@ -20,6 +22,8 @@ new Vue({
 	}
 });
 ```
+
+[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico]()
 
 
 

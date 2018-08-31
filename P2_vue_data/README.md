@@ -1,6 +1,8 @@
 # Vue Data
 ### Trabalhando com dados no vue
 
+[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P3_vue_methods#vue-methods)
+
 1. Em um objeto vue, os dados que serão manipulados em nossa aplicação ficarão armazanados em um objeto específico chamado 'data:{}', cada dado será armazenado como um conjunto de chave e valor.
 
 
@@ -27,3 +29,5 @@ new Vue({
   	</ul>
 </div>
 ```
+
+[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P3_vue_methods#vue-methods)

@@ -1,6 +1,8 @@
 # Vue Methods
 ### Trabalhando com métodos no vue
 
+[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P4_vue_data_biding#vue-data-biding)
+
 1. Em um objeto vue, os métodos ou funcões ficam armazenados dentro da propriedade 'methods', nesse caso estamos criando uma função description que irá retornar uma string e uma função 'funcao_com_parametros("aparelo")' que irá retornar uma string formada utilizando o parâmetro passado. 
 
 
@@ -37,3 +39,5 @@ new Vue({
   <p>{{ funcao_com_parametros("azul") }}</p>
 </div>
 ```
+
+[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P4_vue_data_biding#vue-data-biding)
