@@ -8,13 +8,13 @@
 
 ```html
 <div id="vue-app">
-  	<button v-on:click="addval()">Adicionar 1</button>
+    <button v-on:click="addval()">Adicionar 1</button>
     <button v-on:click="subtractval()">Subtrair 1</button>
     <p>Valor: {{ val }}</p>
 </div>
 ```
 
-2. Quando ocorrer um click em um dos botões disparamas o método reaponsável que irá alterar o valor da variável 'val', e retornará instantaneamente o resultado para o usuário. Temos aqui o exemplo do conceito de reatividade.
+2. Quando ocorrer um click em um dos botões disparamas o método reaponsável que irá alterar o valor da variável 'val', e retornará instantaneamente o resultado para o usuário. Temos aqui o exemplo do conceito de reatividade. Observe que quando utilizamos variáveis ou funções dentro do mesmo objeto utilizamos a palavra 'this'.
 
 ```javascript
 new Vue({
