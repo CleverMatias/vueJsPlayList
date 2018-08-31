@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/vue"></script>
+	<title></title>
+</head>
+<body>
+  <div id="vue-app">
+  	<h1>Link</h1>
+    <p>Visit: <a v-bind:href="url">Google</a></p>
+  	
+  </div>
+
+  <script>
+  	new Vue({
+  		el: '#vue-app',
+  		data: {
+  			url: 'https://www.google.com.br/'
+  		}
+  	});
+  </script>
+</body>
+</html>
