@@ -22,6 +22,5 @@ new Vue({
 	el: '#vue-app'
 }); 
 ```
-<span style="color:red">some **This is Red Bold.** text</span>
 
 [voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P1_vue_instance#vue-instance)
