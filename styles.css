@@ -7,7 +7,7 @@
 body{
 	width: 80%;
 	height: auto;
-	margin: 20vh;
+	margin: 0 auto;
 }
 
 a{
@@ -19,4 +19,9 @@ a{
 	padding: 15px;
 	color: #666;
 	border: 2px solid orange;
+}
+
+#subtitle{
+	font-size: 1.6rem;
+	color: #FF803E; 
 }

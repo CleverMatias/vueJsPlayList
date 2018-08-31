@@ -1,9 +1,8 @@
 new Vue({
 	el: '#vue-app',
 	data: {
-		name: 'Cleverson',
-		title: 'The Net Ninja',
-		website: 'https://www.facebook.com/cleverson.matias.7'
+		title: 'Matias Web Dev',
+		name: 'Cleverson'
 	},
 	methods: {
 		greeting (time) {
@@ -11,10 +10,3 @@ new Vue({
 		}
 	}
 });
-
-var ourDog = {
-	"name": 'bob'
-};
-
-delete ourDog.name;
-console.log(ourDog.name);
