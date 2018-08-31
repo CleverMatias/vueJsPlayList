@@ -10,3 +10,10 @@ Para trabalhar com o vue.js o desenvolvedor tem que ter prévio conhecimento em 
 * Dentro do body temos a seguinte tag.
 ```html
 <div id="vue-app"></div>
+```
+* Dentro do script temos o seguinte código que instancia uma classe Vue e passa como propriedade o elemento '#vue-app' que criamos no corpo da página, assim a classe vue js consegue observar o elemento '#vue-app' e realizar operações dentro dele de maneira reativa, ou seja, sem necessidade de uma nova requisição.
+```javascript
+new Vue({
+	el: '#vue-app'
+});
+```
