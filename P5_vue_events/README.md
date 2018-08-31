@@ -36,6 +36,7 @@ new Vue({
 ### Modificadores de eventos
 
   1. Modificadores de eventos
+  
       .stop
       ```html
       <!-- the click event's propagation will be stopped -->
