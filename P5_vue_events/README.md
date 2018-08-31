@@ -33,6 +33,21 @@ new Vue({
       }
 ```
 
+### Modificadores de eventos
+
+  1. Modificadores de eventos
+      .stop
+      ```html
+      <!-- the click event's propagation will be stopped -->
+      <a v-on:click.stop="doThis"></a>
+
+      ```
+      .prevent
+      .capture
+      .self
+      .once
+      .passive
+
 [voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico]()
 
 
