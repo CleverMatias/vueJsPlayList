@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/vue"></script>
+	<title>teste</title>
+  <style type="text/css">
+    canvas{
+      width: 500px;
+      height: 500px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="vue-app">
+  	<p>Posição do mouse:</p>
+    <p>Horizontal: {{x}}</p>
+    <p>Vertical: {{y}}</p>
+    <canvas v-on:mousemove="position"></canvas>
+  	
+  </div>
+
+  <script>
+  	new Vue({
+  		el: '#vue-app',
+  		data: {
+  			x: null,
+        y: null
+  		},
+      methods: {
+        position (event) {
+          this.x = event.offsetX
+          this.y = event.offsetY
+        }
+      }
+  	});
+  </script>
+</body>
+</html>
