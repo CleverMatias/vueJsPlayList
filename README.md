@@ -18,3 +18,6 @@ Falando um pouco sobre como trabalhar com funções através do vue methods...
 [P4_vue_data_biding](https://github.com/CleverMatias/vueJsPlayList/tree/master/P4_vue_data_biding#vue-data-biding)
 Falando um pouco sobre como trabalhar com os atributos html através do vue.js
 
+[P5_vue_events](https://github.com/CleverMatias/vueJsPlayList/tree/master/P5_vue_events#vue-events)
+Falando um pouco sobre eventos no vue.js
+
