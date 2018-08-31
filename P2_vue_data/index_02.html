@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<script src="https://unpkg.com/vue"></script>
+	<title></title>
+</head>
+<body>
+  <div id="vue-app">
+	<h1>Pessoa</h1>
+	<ul>
+		<li>Nome: {{ nome }}</li>
+		<li>Idade: {{ idade }}</li>
+		<li>peso: {{ peso }}</li>
+	</ul>
+  </div>
+
+  <script>
+  	new Vue({
+  		el: '#vue-app',
+  		data: {
+  			nome: "Pequeno Aprendiz",
+  			idade: 34,
+  			peso: 78.5 + "Kg."
+  		}
+  	});
+  </script>
+</body>
+</html>
