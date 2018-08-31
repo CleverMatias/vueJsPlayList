@@ -3,7 +3,7 @@
 
 ### cada pasta contém uma tema separado começando dos princípios mais básicos até os mais complexos, cada pasta contém também um documento escrito e o exemplo de código com subpastas ou diretórios.
 
-[PO_introduction](https://github.com/CleverMatias/vueJsPlayList/tree/master/P0_introduction)
+[PO_introduction](https://github.com/CleverMatias/vueJsPlayList/tree/master/P0_introduction#o-vuejs)
 ...Contém a forma mais básica de se iniciar um projeto em vue.js
 
 [P1_vue_instance](https://github.com/CleverMatias/vueJsPlayList/tree/master/P1_vue_instance)
