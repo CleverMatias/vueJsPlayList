@@ -6,6 +6,29 @@
 O vue.js é um framework front-end javascript para criação de componentes web reativos, podemos de certa maneira compará-lo ao Angular ou React por exemplo, O vue.js destaca-se em sua facilidade de executar as mesmas tarefas dos outros frameworks, e tem uma visão de reaproveitamento de componentes.
 
 Para trabalhar com o vue.js o desenvolvedor tem que ter prévio conhecimento em HTML, CSS, e javascript (não precisa ser avançado, mas pra compreender é bom um conhecimento razoável).
+
+Código completo do objeto de estudo deste capítulo.
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/vue"></script>
+	<title></title>
+</head>
+<body>
+  <div id="vue-app"></div>
+
+  <script type="text/javascript">
+  	new Vue({
+		el: '#vue-app',
+	    });
+  </script>
+</body>
+</html>
+```
+
 1. Antes de tudo precisamos importar a biblioteca contendo o Vue.js, nesse exemplo utilizaremos um cdn para isso, quando nos aprofundarmos mais utilizaremos formas mais adequadas para trabalhos em larga escala. no header do nosso html encontramos a tag.
 ```html
 <script src="https://unpkg.com/vue"></script>
