@@ -39,9 +39,11 @@ new Vue({
 
       .stop
       ```html
-      <!-- the click event's propagation will be stopped -->
+      <!-- .stop para a propagação do evento para outros elementos -->
       <a v-on:click.stop="doThis"></a>
       ```
+      para aprender sobre propagação visite: [o que é progagação de evento?](https://www.w3schools.com/jquery/event_stoppropagation.asp)
+      
       .prevent
       ```html
       <!-- the submit event will no longer reload the page -->
