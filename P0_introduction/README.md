@@ -1,4 +1,6 @@
-# O vue.js [voltar](https://github.com/CleverMatias/vueJsPlayList) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P1_vue_instance)
+# O vue.js 
+[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P1_vue_instance)
+
 ### O que é o vue js?
 
 O vue.js é um framework front-end javascript para criação de componentes web reativos, podemos de certa maneira compará-lo ao Angular ou React por exemplo, O vue.js destaca-se em sua facilidade de executar as mesmas tarefas dos outros frameworks, e tem uma visão de reaproveitamento de componentes.
@@ -21,4 +23,4 @@ new Vue({
 });
 ```
 
-[voltar](https://github.com/CleverMatias/vueJsPlayList) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P1_vue_instance)
+[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P1_vue_instance)
