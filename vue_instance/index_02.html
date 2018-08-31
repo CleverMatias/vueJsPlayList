@@ -7,11 +7,14 @@
 	<title></title>
 </head>
 <body>
-  <div id="vue-app"></div>
+  <div id="vue-app">{{ msg }}</div>
 
   <script type="text/javascript">
   	new Vue({
 		el: '#vue-app',
+		data: {
+			msg: 'Minha mensagem'
+		}
 	    });
   </script>
 </body>
