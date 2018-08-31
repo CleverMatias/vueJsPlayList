@@ -34,7 +34,7 @@ Código completo do objeto de estudo deste capítulo.
 <script src="https://unpkg.com/vue"></script>
 ```
 2. Para iniciar utilizaremos o cdn do vue, criaremos um documento padrão html e utilizaremos o script na própria página.
-* Abra o index_01.html desta mesma pasta no editor.
+
 * Dentro do body temos a seguinte tag.
 ```html
 <div id="vue-app"></div>
