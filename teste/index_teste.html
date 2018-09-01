@@ -12,22 +12,20 @@
 <body>
   <div id="vue-app">
   	<p>Evento Keyup</p>
-    <p>digite um texto:</p>
-    <input v-model="name" v-on:keyup="logName" type="text"><br>
-    <span>caracteres digitados: {{ count }}</span>
+    <button id="elem" v-on:click="onclick">click</button>
+    
   </div>
 
   <script>
   	new Vue({
   		el: '#vue-app',
   		data: {
-        count: 0,
-  			name: ""
+        
   		},
       methods: {
-         logName () {
-          this.count = this.name.length
-         }
+        onclick () {
+          alert('clicado!')
+        }
       }
   	});
   </script>
