@@ -21,3 +21,6 @@ Falando um pouco sobre como trabalhar com os atributos html através do vue.js
 [P5_vue_events](https://github.com/CleverMatias/vueJsPlayList/tree/master/P5_vue_events#vue-events)
 Falando um pouco sobre eventos no vue.js
 
+[P6_vue_events_keyup](https://github.com/CleverMatias/vueJsPlayList/tree/master/P6_vue_events_keyup)
+Falando um pouco sobre eventos no vue.js
+

@@ -44,7 +44,7 @@ Código completo do exemplo utilizado neste capítulo.
 </html>
 ```
 
-2. O script não tem nada de complexo, temos um contador, a string name que irá armazenar o texto que o usuárido digitar e um método que é chamado cada vez que ocorre o evento.
+2. O script não tem nada de complexo, temos um contador, a string 'name' que irá armazenar o texto que o usuárido digitar e um método que é chamado cada vez que ocorre o evento.
 
 ```javascript
 new Vue({
@@ -65,8 +65,8 @@ new Vue({
 
   1. Modificadores de eventos no teclado
 
-      Lista completa dos apelidos de modificadores de tecla,
-      levando em consideração que é auto explicativo não irei explicar cada item.
+      Lista completa dos apelidos de modificadores de evento,
+      levando em consideração que é auto explicativo não irei detalhar cada item.
 
       .enter
       .tab
