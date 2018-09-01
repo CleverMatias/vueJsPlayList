@@ -43,42 +43,27 @@ new Vue({
       <a v-on:click.stop="doThis"></a>
       ```
       para aprender sobre propagação visite: [o que é progagação de evento?](https://www.w3schools.com/jquery/event_stoppropagation.asp)
-      
+
       .prevent
       ```html
-      <!-- the submit event will no longer reload the page -->
+      <!-- .prevent impede que a página seja carregada novamente -->
       <form v-on:submit.prevent="onSubmit"></form>
-
-      <!-- modifiers can be chained -->
-      <a v-on:click.stop.prevent="doThat"></a>
-
-      <!-- just the modifier -->
-      <form v-on:submit.prevent></form>
-
       ```
       .capture
       ```html
-      <!-- use capture mode when adding the event listener -->
-      <!-- i.e. an event targeting an inner element is handled here before being handled by that element -->
+      <!-- executar ação antes de chegar ao elemento target-->
       <div v-on:click.capture="doThis">...</div>
       ```
       .self
       ```html
-      <!-- only trigger handler if event.target is the element itself -->
+      <!-- somente realiza a ação se o elemento clicado for o elemento target da ação-->
       <!-- i.e. not from a child element -->
       <div v-on:click.self="doThat">...</div>
       ```
       .once
       ```html
-      <!-- the click event will be triggered at most once -->
+      <!-- só executa uma vez -->
       <a v-on:click.once="doThis"></a>
-      ```
-      .passive
-      ```html
-      <!-- the scroll event's default behavior (scrolling) will happen -->
-      <!-- immediately, instead of waiting for `onScroll` to complete  -->
-      <!-- in case it contains `event.preventDefault()`                -->
-      <div v-on:scroll.passive="onScroll">...</div>
       ```
 
 [voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico]()

@@ -11,6 +11,18 @@
       height: 500px;
       border: 2px solid black;
     }
+    #div{
+      width: 200px;
+      height: 150px;
+      background-color: blue;
+    }
+    #h1{
+      background-color: red;
+      color: white;
+    }
+    #span{
+      background-color: yellow;
+    }
   </style>
 </head>
 <body>
@@ -19,7 +31,12 @@
     <p>Horizontal: {{x}}</p>
     <p>Vertical: {{y}}</p>
     <canvas v-on:mousemove="position"></canvas>
-  	
+  	<div v-on:click="propagation" id="div">
+     <h1 v-on:click="propagation" id="h1">
+        Titulo 
+       <span v-on:click="propagation" id="span">Span</span>
+     </h1> 
+    </div>
   </div>
 
   <script>
@@ -33,6 +50,11 @@
         position (event) {
           this.x = event.offsetX
           this.y = event.offsetY
+        },
+        propagation (event) {
+          event.stopPropagation();
+          alert(event.target.tagName)
+
         }
       }
   	});
