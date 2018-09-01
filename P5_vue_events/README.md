@@ -1,7 +1,7 @@
 # Vue Events
 ### Trabalhando com Eventos no vue.js
 
-[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico]()
+[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P6_vue_events_keyup)
 
 1. Trabalhamos com eventos no vue.js adicionando o atributo do vue "v-on:'nome_do_evento'='função_responsável'", dessa 	     maneira quando ocorrer o evento o vue.js irá delegar a responsabilidade para o método chamado no atributo.
 No código abaixo esperamos dois eventos de click para somar ou subtrair o valor da variável 'val'.
@@ -66,7 +66,7 @@ new Vue({
       <a v-on:click.once="doThis"></a>
       ```
 
-[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico]()
+[voltar](https://github.com/CleverMatias/vueJsPlayList#tutorial-vue-js-por-matias-web-dev) - [próximo tópico](https://github.com/CleverMatias/vueJsPlayList/tree/master/P6_vue_events_keyup)
 
 
 
