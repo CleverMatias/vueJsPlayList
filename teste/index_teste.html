@@ -17,17 +17,12 @@
   </div>
 
   <script>
-  	new Vue({
-  		el: '#vue-app',
-  		data: {
-        
-  		},
-      methods: {
-        onclick () {
-          alert('clicado!')
-        }
-      }
-  	});
+    let answare = prompt('qual o nome oficial do javascript?', '');
+    if (answare == 'ECMAScript') {
+      alert('Right!');
+    }else{
+      alert('You don\'t know? ECMAScript');
+    }
   </script>
 </body>
 </html>
