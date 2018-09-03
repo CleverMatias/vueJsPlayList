@@ -10,19 +10,30 @@
   </style>
 </head>
 <body>
-  <div id="vue-app">
-  	<p>Evento Keyup</p>
-    <button id="elem" v-on:click="onclick">click</button>
+  <div id="app">
+    <h1>{{ title }}</h1>
+    <meu-componente name='cleverson'></meu-componente>
+    <outro-component name='outro'/></outro-component>
     
   </div>
 
   <script>
-    let answare = prompt('qual o nome oficial do javascript?', '');
-    if (answare == 'ECMAScript') {
-      alert('Right!');
-    }else{
-      alert('You don\'t know? ECMAScript');
-    }
+    Vue.component('meu-componente', {
+      props: ['name'],
+      template: '<h1>Meu componente variável {{ name }}</h1>'
+    })
+
+    Vue.component('outro-component',{
+      props: [],
+      template: '<p> Meu outro component </p>'
+    })
+
+    let app = new Vue({
+      el: '#app',
+      data: {
+        title: 'Meu app'
+      }
+    })
   </script>
 </body>
 </html>
