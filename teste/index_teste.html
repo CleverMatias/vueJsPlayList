@@ -6,34 +6,141 @@
 	<script src="https://unpkg.com/vue"></script>
 	<title>teste</title>
   <style type="text/css">
-    
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+    }
+    body{
+      font-family: 'Arial', 'Helvetica', Sans-serif;
+    }
+    #app{
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: inline-flex;
+    }
+    header{
+      width: 100%;
+      height: 60px;
+      background-color:#4fbaca;
+      padding: 5px;
+    }
+    aside{
+      width: 20%;
+      height: 90vh;
+      background-color: #44c1d4;
+    }
+    section{
+      width: 80%;
+    }
+    .posts-container{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      -ms-box-orient: horizontal;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .wrap li{
+      background: #0d4754db;
+    }
+
+    .flex-item{
+      background: #a78045;
+      padding: 5px;
+      width: 280px;
+      height: 100px;
+      margin: 10px;
+      
+      line-height: 30px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.3em;
+      text-align: center;
+    }
+    .flex-item span{
+      width: 100%;
+      font-size: .8em;
+      text-align: left;
+    }
   </style>
 </head>
 <body>
   <div id="app">
-    <h1>{{ title }}</h1>
-    <meu-componente name='cleverson'></meu-componente>
-    <outro-component name='outro'/></outro-component>
-    
+    <!-- header -->
+    <header>
+      <h1></h1>
+      
+    </header>
+    <!-- menu lateral-->
+    <aside></aside>
+    <section>
+      <ul class="posts-container wrap">
+        <li v-for="post in posts" class="flex-item">
+          <p>{{post.title}}</p>
+          <span><p>autor: {{post.author}}</p></span>
+          <span><p>data: {{post.date}}</p></span>
+          
+        </li>
+      </ul>
+    </section>
+
   </div>
 
-  <script>
-    Vue.component('meu-componente', {
-      props: ['name'],
-      template: '<h1>Meu componente variável {{ name }}</h1>'
-    })
-
-    Vue.component('outro-component',{
-      props: [],
-      template: '<p> Meu outro component </p>'
-    })
-
+<script>
+    // posts 
+    // main component
     let app = new Vue({
       el: '#app',
-      data: {
-        title: 'Meu app'
+      data:{
+        posts: [
+          { id: 1,
+            author: 'cleverson',
+            title: 'Introdução',
+            body: 'O vue js é uma ferramenta muito legal para desenvolver front end orientado a components',
+            date: '04/09/2018'
+          },
+          { id: 2,
+            author: 'cleverson',
+            title: 'Vue Instance',
+            body: 'O vue js é uma ferramenta muito legal para desenvolver front end orientado a components',
+            date: '05/09/2018'
+          },
+          { id: 3,
+            author: 'cleverson',
+            title: 'Vue data',
+            body: 'O vue js é uma ferramenta muito legal para desenvolver front end orientado a components',
+            date: '04/09/2018'
+          },
+          { id: 5,
+            author: 'cleverson',
+            title: 'Vue Data Binding',
+            body: 'O vue js é uma ferramenta muito legal para desenvolver front end orientado a components',
+            date: '04/09/2018'
+          },
+          { id: 6,
+            author: 'cleverson',
+            title: 'Vue Events',
+            body: 'O vue js é uma ferramenta muito legal para desenvolver front end orientado a components',
+            date: '05/09/2018'
+          },
+          { id: 7,
+            author: 'cleverson',
+            title: 'Vue Model',
+            body: 'O vue js é uma ferramenta muito legal para desenvolver front end orientado a components',
+            date: '04/09/2018'
+          }
+        ]
       }
     })
-  </script>
+</script>
 </body>
 </html>

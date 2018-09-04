@@ -1,105 +1,115 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>sidebar</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
-  <style type="text/css">
-    html, body, #app {
-      height: 100%;
-    }
-    #app {
-      min-height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .main-content {
-      //flex: 1;
-    }
-    .footer {
-       margin-top: -12px;
-    }
-    @media screen and (max-width: 768px) {
-      #menu-toggle:checked + .nav-menu {
-        display: block;
-    }
-}
-  </style>
-</head>
-<body>
-  <div id="app">
-    
-<nav class="nav has-shadow">
-  <div class="container">
-    <div class="nav-left">
-      <a class="nav-item">
-        Website
-      </a>
-    </div>
-    <label for="menu-toggle" class="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <input type="checkbox" id="menu-toggle" class="is-hidden"/>
-    <div class="nav-right nav-menu">
-      <a class="nav-item is-tab is-hidden-tablet">
-        <span class="icon"><i class="fa fa-home"></i></span> Home
-      </a>
-      <a class="nav-item is-tab is-hidden-tablet">
-        <span class="icon"><i class="fa fa-table"></i></span> Links
-      </a>
-      <a class="nav-item is-tab is-hidden-tablet">
-        <span class="icon"><i class="fa fa-info"></i></span> About
-      </a>
-      
-      <a class="nav-item is-tab is-active">
-        <span class="icon"><i class="fa fa-user"></i></span>
-      </a>
-      <a class="nav-item is-tab">
-        <span class="icon"><i class="fa fa-sign-out"></i></span>
-      </a>
-    </div>
-  </div>
-</nav>
-
-<section class="main-content columns is-fullheight">
-  
-  <aside class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
-    <p class="menu-label is-hidden-touch">Navigation</p>
-    <ul class="menu-list">
-      <li>
-        <a href="#" class="">
-          <span class="icon"><i class="fa fa-home"></i></span> Home
-        </a>
+<template>
+  <div v-bind:class="{ goleft: hidesidebar }" class="sidebar">
+    <ul class="main-menu"> <!-- Menu -->
+      <li class="tl" > <!-- Menu titles -->
+         <a v-on:click='showprodutos = !showprodutos' class="menu"><font-awesome-icon icon="archive"/> PRODUTOS </a>
+           <ul class="submenu" v-show='showprodutos'>
+            <transiction name="bounce">
+             <li><a><font-awesome-icon icon="edit"/> submenu</a></li>
+             <li><a><font-awesome-icon icon="edit"/> submenu</a></li>
+             <li><a><font-awesome-icon icon="edit"/> submenu</a></li>
+             <li><a><font-awesome-icon icon="edit"/> submenu</a></li>
+            </transiction>
+           </ul>
       </li>
-      <li>
-        <a href="#" class="is-active">
-          <span class="icon"><i class="fa fa-table"></i></span> Links
-        </a>
-
-        <ul>
-          <li>
-            <a href="#">
-              <span class="icon is-small"><i class="fa fa-link"></i></span> Link1
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon is-small"><i class="fa fa-link"></i></span> Link2
-            </a>
-          </li>
+      <li class="tl">
+        <a v-on:click='showclientes = !showclientes' class="menu"><font-awesome-icon icon="users"/> CLIENTES </a>
+        <ul class="submenu" v-show='showclientes'>
+          <li><a><font-awesome-icon icon="user"/> Lista de clientes</a></li>
         </ul>
       </li>
-      <li>
-        <a href="#" class="">
-          <span class="icon"><i class="fa fa-info"></i></span> About
-        </a>
-      </li>
     </ul>
-  </aside>
-  
-</section>
-    
+    <div class="hamburg" v-on:click="retract">
+      <font-awesome-icon icon="bars"/>
+    </div>
   </div>
-</body>
-</html>
+</template>
+<script>
+export default{
+  name: 'UserIndex',
+  data () {
+    return {
+      showprodutos: false,
+      showclientes: false,
+      hidesidebar: true
+    }
+  },
+  methods: {
+    retract () {
+      this.hidesidebar = !this.hidesidebar
+    }
+  }
+}
+</script>
+<style scoped>
+ .sidebar{
+  position: absolute;
+  width: 65%;
+  max-width: 250px;
+  height: 100vh;
+  padding: 0px;
+  display: flex;
+  background: #343334;
+ }
+ .main-menu{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+ }
+ .active{
+  background: red;
+ }
+
+ .menu:hover{
+  background: #202020;
+ }
+
+ .tl a{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  background: '';
+ }
+
+ .submenu{
+  width: 100%;
+  background: '';
+  display: '';
+ }
+ .submenu a {
+  display: block;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  color: #ccc;
+  background: #2a5c54;
+  text-align: left;
+ }
+
+ .submenu a:hover{
+  background: #202020;
+ }
+
+ .hide{
+  display: none;
+ }
+
+ .hamburg{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  color: white;
+  position: absolute;
+  left: 100%;
+  top: 0;
+ }
+
+ .goleft{
+  margin-left: -250px;
+ }
+</style>
